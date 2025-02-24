@@ -8,7 +8,9 @@
 </head>
 <body>
     <h2>Farm Details</h2>
-    <table>
+
+    <!-- Table to Display Data -->
+    <table id="farmTable">
         <tr>
             <th>Farm Name</th>
             <th>Owner Name</th>
@@ -17,14 +19,19 @@
             <th>Sy No</th>
             <th>Attachments</th>
         </tr>
-        <tr>
-            <td>Green Fields</td>
-            <td>John Doe</td>
-            <td>Andhra Pradesh</td>
-            <td>10 Acres</td>
-            <td>12345</td>
-            <td><a href="https://meebhoomi.ap.gov.in/" target="_blank">Meebhoomi</a></td>
-        </tr>
     </table>
+
+    <!-- Form to Add New Data -->
+    <form id="farmForm">
+        <input type="text" id="farmName" placeholder="Farm Name" required>
+        <input type="text" id="ownerName" placeholder="Owner Name" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="area" placeholder="Area" required>
+        <input type="text" id="syNo" placeholder="Sy No" required>
+        <input type="url" id="attachment" placeholder="Meebhoomi URL" required>
+        <button type="submit">Add Farm</button>
+    </form>
+
+    <script src="js/farms.js"></script>
 </body>
 </html>
