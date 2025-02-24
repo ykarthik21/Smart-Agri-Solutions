@@ -1,3 +1,8 @@
+// Redirect if not logged in
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let farmTable = document.getElementById("farmTable");
     let farmForm = document.getElementById("farmForm");
