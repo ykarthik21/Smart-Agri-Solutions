@@ -1,3 +1,8 @@
+// Redirect if not logged in
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
     
