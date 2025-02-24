@@ -1,35 +1,62 @@
-body.login-page {
-    background: url('../assets/images/farm-background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* General Styling */
+body {
     font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
-.login-container {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
+/* Headings */
+h2 {
     text-align: center;
+    color: #333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input {
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #28a745;
+    color: white;
+}
+
+td a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Form Styling */
+form {
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input, button {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
 button {
     background: #28a745;
     color: white;
-    padding: 10px;
     border: none;
-    width: 100%;
-    border-radius: 5px;
     cursor: pointer;
 }
 
