@@ -1,65 +1,49 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+/* Login Page Background */
+.login-bg {
+    background: url('images/farm-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Headings */
-h2 {
-    text-align: center;
-    color: #333;
-}
-
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background: #28a745;
-    color: white;
-}
-
-td a {
-    text-decoration: none;
-    color: blue;
-}
-
-/* Form Styling */
-form {
-    width: 50%;
-    margin: 0 auto;
-    background: white;
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
 }
 
-input, button {
+/* Input Fields */
+input {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
+/* Button */
 button {
+    width: 100%;
+    padding: 10px;
     background: #28a745;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
     background: #218838;
+}
+
+/* Error Message */
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
 }
